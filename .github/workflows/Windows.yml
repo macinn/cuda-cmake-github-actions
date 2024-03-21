@@ -9,6 +9,7 @@ on:
       - "!scripts"
       - "scripts/install_cuda_windows.ps1"
       - "!*.md"
+  workflow_dispatch:
 jobs:
   build:
     runs-on: ${{ matrix.os }}
